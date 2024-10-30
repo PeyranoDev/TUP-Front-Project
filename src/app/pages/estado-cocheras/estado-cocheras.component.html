@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <table>
+      <thead>
+        <tr>
+          <td>Nº</td>
+          <td>Disponibilidad</td>
+          <td>Ingreso</td>
+          <td>Acciones</td>
+        </tr>
+      </thead>
+      <tbody>
+        @for (cochera of dataCocheraService.cocheras; track $index) {
+          <tr>
+            <td>{{cochera.numero}}</td>
+            <td>{{cochera.disponible ? "Disponible" : "Ocupada" }}</td>
+            <td>{{cochera.ingreso}}</td>
+            <td>
+              <div class="button-container">
+                <button class="button" (click)="cambiarEstadoCochera($index)">
+                  {{cochera.disponible ? 'Ocupar Cochera' : 'Desocupar Cochera'}}
+                </button>
+                @if (cochera.disponible) {
+                  <span class="material-symbols-outlined button" (click)="preguntarBorrarCochera($index)">delete_forever</span>
+                }
+              </div>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+
+    <div class="button-container">
+      <button class="button" (click)="agregarCochera()">+</button>
+    </div>

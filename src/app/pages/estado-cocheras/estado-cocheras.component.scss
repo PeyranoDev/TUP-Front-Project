@@ -1,0 +1,84 @@
+@import "../../../../public/variables.scss";
+
+.contenedor-tabla {
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 80%; 
+  max-width: 600px; 
+  border: 1px solid #ddd;
+  margin: auto;
+
+  thead {
+    background-color: #5c67f2;
+    color: white;
+  }
+
+  tbody {
+    tr {
+      background-color: #f9f9f9;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.button {
+  padding: 10px;
+  background-color: #5c67f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 1em;
+  max-width: 10rem;
+
+  &:hover {
+    background-color: #4a55d4;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.mensaje-error {
+  color: red;
+  font-weight: bold;
+}

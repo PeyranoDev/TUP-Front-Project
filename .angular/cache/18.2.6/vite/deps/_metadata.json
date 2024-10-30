@@ -1,0 +1,52 @@
+{
+  "hash": "943f9e53",
+  "configHash": "6ee2e544",
+  "lockfileHash": "0b66f9d4",
+  "browserHash": "cd15a47d",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "bb10fb7b",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "ac54a974",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "f21f785a",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "5dbfcbaa",
+      "needsInterop": false
+    },
+    "sweetalert2": {
+      "src": "../../../../../node_modules/sweetalert2/dist/sweetalert2.esm.all.js",
+      "file": "sweetalert2.js",
+      "fileHash": "6d42bd0e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-PIHFLKJ4": {
+      "file": "chunk-PIHFLKJ4.js"
+    },
+    "chunk-CQRKIAEP": {
+      "file": "chunk-CQRKIAEP.js"
+    },
+    "chunk-4VXC56XQ": {
+      "file": "chunk-4VXC56XQ.js"
+    },
+    "chunk-WDMUDEB6": {
+      "file": "chunk-WDMUDEB6.js"
+    }
+  }
+}
